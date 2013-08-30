@@ -1,0 +1,77 @@
+.menu-col-1,
+.menu-col-2,
+.menu-col-3 {
+	min-height: 200px;
+	margin-bottom: 40px;
+}
+
+.menu-heading {
+	color: @textColor;
+	border-bottom: 2px solid @textColor;
+	h3 {
+		font-family: 'Holtwood One SC', serif;
+		font-size: 3em;
+		margin-top: 70px;
+		text-align: center;
+	}
+}
+
+.coffee-menu,
+.tea-menu {
+
+	h3 {
+		font-family: 'Holtwood One SC', serif;
+		font-size: 2em;
+		color: @textColor;
+		margin-bottom: 20px;
+		padding-bottom: 10px;
+		border-bottom: dotted 1px @textColor;
+	}
+	h4 {
+		font-family: helvetica, sans-serif;
+		color: @textColor;
+		font-size: 1.3em;
+		line-height: .4em; 
+	}
+	p {
+		color: #b4917e;
+		font-size: .8em;
+		margin-bottom: 23px;
+	}
+}
+
+.shirts-thumb,
+.beans-thumb {
+	float: left;
+	border: solid 5px @textColor;
+	width: 45%;
+	margin-left: 12px;
+}
+
+@media (min-width: @screen-md) {
+	.shirts-thumb {
+		position: absolute;
+		width: 300px;
+		left: 795px;
+		top: -460px;
+	}
+	.beans-thumb {
+		position: absolute;
+		width: 300px;
+		left: 795px;
+		top: -220px;
+	}
+}
+
+@media (min-width: @screen-sm) {
+	.shirts-thumb,
+	.beans-thumb {
+		margin-left: 25px;
+	}
+
+}
+
+.menu-col-3 {
+	width: 100%;
+}
+

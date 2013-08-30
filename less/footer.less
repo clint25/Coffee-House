@@ -1,0 +1,32 @@
+.footer-logo {
+	font-family: 'Lobster';
+	color: @textColor;
+	text-shadow: 3px 3px #715d52;
+	font-size: 2.5em;
+	text-align: left;
+	margin-bottom: 40px;
+	margin-left: 15px;
+}
+
+footer {
+	background: #000;
+	width: 100%;
+	border-top: solid 1px #3e3030;
+}
+
+.footer-address {
+	margin-left: 15px;
+	color: @textColor;
+}
+
+@media (min-width: @screen-md) {
+	.footer-address {
+		float: right;
+		margin-right: 100px;
+	}
+
+	.footer-logo {
+		font-size: 3.5em;
+		margin-left: 60px;
+	}
+}
