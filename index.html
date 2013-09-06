@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <h1>The Coffee House</h1>
+      <h1><a href="index.html">The Coffee House</a></h1>
     </header>
 
     <div id="subhead">
@@ -30,7 +30,7 @@
       <!-- <div id="carousel" class="hidden-xs">Carousel</div> -->
         <div id="carousel" class="carousel slide hidden-xs">
           <!-- Indicators -->
-          <ol class="carousel-indicators">
+          <ol class="carousel-indicators hidden-sm">
             <li data-target="#carousel" data-slide-to="0" class="active"></li>
             <li data-target="#carousel" data-slide-to="1"></li>
             <li data-target="#carousel" data-slide-to="2"></li>
@@ -50,10 +50,10 @@
           </div>
 
           <!-- Controls -->
-          <a class="left carousel-control" href="#carousel" data-slide="prev">
+          <a class="left carousel-control hidden-sm" href="#carousel" data-slide="prev">
             <span class="icon-prev"></span>
           </a>
-          <a class="right carousel-control" href="#carousel" data-slide="next">
+          <a class="right carousel-control hidden-sm" href="#carousel" data-slide="next">
             <span class="icon-next"></span>
           </a>
         </div>
@@ -108,17 +108,19 @@
         </div>
         <!-- </div> -->
 
-        <div class="menu-col-3 col-sm-11 col-md-4 col-md-pull-4">
-          <a href="#"><img class="shirts-thumb" src="img/special-shirts.jpg" alt=""></a>
-          <a href="#"><img class="beans-thumb" src="img/special-beans.jpg" alt=""></a>
+        <div class="menu-col-3 col-sm-11 col-md-4 col-md-pull-4 images-div">
+          <a href="#"><img class="shirts-thumb img-responsive" src="img/special-shirts.jpg" alt=""></a>
+          <a href="store.html"><img class="beans-thumb img-responsive" src="img/special-beans.jpg" alt=""></a>
         </div>
       </div><!-- END end row -->
     </div><!-- END menu container -->
 
     <footer>
-      <div class="row col-md-12">
-        <h1 class="footer-logo">The Coffee House</h1>
-        <div class="footer-address">
+      <div class="row">
+        <div class="col-sm-6">
+          <h1 class="footer-logo">The Coffee House</h1>
+        </div>
+        <div class="footer-address col-sm-6">
           <address> 
              Address line 1 <br>
              Cityname, ST 33333<br>
@@ -131,7 +133,7 @@
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="js/jquery.js"></script>
     <script src="js/vendor-ck.js"></script>
     <script src="js/main.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

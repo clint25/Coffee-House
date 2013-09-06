@@ -48,18 +48,23 @@
 	margin-left: 12px;
 }
 
+.images-div img a:hover {
+	color: @textColor;
+}
+
 @media (min-width: @screen-md) {
-	.shirts-thumb {
-		position: absolute;
-		width: 300px;
-		left: 795px;
-		top: -460px;
+	.images-div {
+		margin-top: 40px;
 	}
+}
+
+@media (min-width: @screen-md) {
+	.shirts-thumb,
 	.beans-thumb {
-		position: absolute;
-		width: 300px;
-		left: 795px;
-		top: -220px;
+		width: 80%;
+	}
+	.shirts-thumb {
+		margin-bottom: 15px;
 	}
 }
 
@@ -71,7 +76,112 @@
 
 }
 
-.menu-col-3 {
-	width: 100%;
+.storeImgLinks-col-2 {
+	margin-top: 20px;
+	margin-bottom: 60px;
+		.store-item-thumb {
+			background: none;
+			border: none;
+			h3 {
+				color: #b4917e;
+				margin-top: 10px;
+				font-size: 1.5em;
+			}
+			span {
+				color: #b4917e;
+
+			}
+		}
 }
+
+.bean-categories {
+	margin-top: 20px;
+	p {
+		color: #b4917e;
+		font-size: 1em;
+		padding-bottom: 10px;
+		border-bottom: 2px solid @textColor;
+			a {color: #b4917e;
+				text-decoration: none;
+			}
+	}
+
+}
+
+.bean-categories a:hover {
+	color: #fff;
+}
+
+.image-col-left {
+	.coffeehouse-breadcrumbs {
+		background-color: @textColor;
+			a {
+				color: #764630;
+				text-decoration: none;
+			} 
+	}
+ }
+
+
+.checkout-window {
+	background-color: @textColor;
+	margin-bottom: 60px;
+}
+
+.checkout-col-right {
+	margin-top: 80px;
+		.checkout-heading {
+			color: #764630;
+			border-bottom: 2px solid #764630;
+			h3 {
+				font-family: 'Holtwood One SC', serif;
+				font-size: 1.5em;
+				text-align: left;
+			}
+		}
+}
+
+.info-checkout-section {
+	h4 {
+		font-size: 1em;
+		color: #764630;
+		margin-right: 60px;
+	}
+	span {
+		color: #764630; 
+	}
+}
+
+.shopping-button {
+	margin-right: 3px;
+	margin-bottom: 20px;
+}
+
+.info-checkout-description {
+	p {
+		font-size: .8em;
+	}
+}
+
+.info-checkout-tabs {
+	p {
+		font-size: .8em;
+	}
+	li {
+		color: #764630;
+			a {
+				color: #764630;
+
+			} 
+	}
+}
+
+.info-tabs {
+	margin-bottom: 15px;
+}
+
+
+
+
+
 

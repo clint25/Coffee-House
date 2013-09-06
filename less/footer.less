@@ -1,7 +1,7 @@
 .footer-logo {
 	font-family: 'Lobster';
 	color: @textColor;
-	text-shadow: 3px 3px #715d52;
+	text-shadow: 1px 1px 1px #000, 3px 3px #715d52;
 	font-size: 2.5em;
 	text-align: left;
 	margin-bottom: 40px;
@@ -17,16 +17,18 @@ footer {
 .footer-address {
 	margin-left: 15px;
 	color: @textColor;
+		a {
+			text-decoration: none;
+			color: #b4917e;
+		}
 }
 
 @media (min-width: @screen-md) {
-	.footer-address {
-		float: right;
-		margin-right: 100px;
+	.footer-address {	
 	}
 
 	.footer-logo {
 		font-size: 3.5em;
-		margin-left: 60px;
 	}
 }
+
