@@ -3,7 +3,7 @@
   <head>
     <title>Coffee House</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
+
     <link href="css/main.css" rel="stylesheet" media="screen">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -12,13 +12,13 @@
       <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <header>
-      <h1><a href="index.html">The Coffee House</a></h1>
-    </header>
 
-    <div class="container">
-      <div class="jumbotron checkout-window">
+  <body>
+    
+    <!--#include virtual="includes/header.html" -->
+
+    <div class="container checkout-window">
+      <div class="container">
           <div class="row">
             <div class="image-col-left col-sm-6 col-md-4">
               <ol class="breadcrumb coffeehouse-breadcrumbs">
@@ -27,55 +27,55 @@
                 <li class="active">House Roast</li>
               </ol>
               <div>
-                <img src="img/store-item.jpg" alt="a bag of beans" />
+                <img class="img-responsive" src="img/store-item.jpg" alt="a bag of beans" />
               </div>
             </div>
             <div class="checkout-col-right col-sm-6 col-md-8">
-              <div class="row checkout-heading">
-                <h3>House Blend</h3>
-              </div>
-              <div class="row info-checkout-section">
-                <div class="info-checkout-col-left col-sm-6 col-md-3">
-                  <h4>&#36;8.95</h4>
+              <h3 class="checkout-heading">House Blend</h3>
+              <div class=" info-checkout-section">
+                <div class="row">
+                  <div class="info-checkout-col-left col-sm-6 col-md-3">
+                    <h4>&#36;8.95</h4>
+                  </div>
+                  <div class="info-checkout-col-right col-sm-6 col-md-9">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                  </div>
                 </div>
-                <div class="info-checkout-col-right col-sm-6 col-md-9 col-md-push-2">
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                </div>
-                <div class="info-checkout-description col-sm-6 col-md-12">
+                <div class="info-checkout-description ">
                   <p>To create our House Blend we combine natural and washed Central and South
                     American coffees. We chose are blends for brightness, flavor and aromas that make for a smooth, satisfying cup of coffee that can be enjoyed all day long.</p>
                   <div class="btn-group">
                     <button type="button" class="btn btn-lg btn-warning shopping-button">Add to Cart</button>
                     <button type="button" class="btn btn-lg btn-success shopping-button">Checkout</button>
                   </div>
-                  <div class="row">
-                    <div class="info-checkout-tabs col-sm-6 col-md-12">
+                  <div class="">
+                    <div class="info-checkout-tabs">
                       <ul class="nav nav-tabs info-tabs" id="myTab">
                         <li class="active"><a href="#features" data-toggle="tab">Features</a></li>
                         <li><a href="#preparation" data-toggle="tab">Preparation</a></li>
                         <li><a href="#sourcing" data-toggle="tab">Sourcing</a></li>
                       </ul>
                       <div class="tab-content">
-                        <div class="tab-pane active" id="features">
+                        <div class="tab-pane active coffee-tabs" id="features">
                           <p>Profile: Light-bodied with a subtle fruity aroma and buttery finish.</p>
                             <p>Place: Costa Rica, Colombia and Brazil.</p>
                             <p>People: This blend is over one hundred years old!</p>
                             <p>Process: Costa Rican coffee is a wash processed, while both Colombian and Brazilian are dry processed.</p>
                             <p>Pairing: Fresh peaches, nectarines or plums, currant or raisin scone.</p>
                         </div>
-                        <div class="tab-pane" id="preparation">
+                        <div class="tab-pane coffee-tabs" id="preparation">
                             <p>GRIND only as much as you need for one cup or one pot of coffee.</p>
                             <p>CHOOSE the correct grind. Fine for espresso, medium for automatic drip, coarse for French Press.</p>
                             <p>MEASURE ground coffee to taste. Start with two level tablespoons of ground coffee per six ounces of cold filtered or bottled water. </p>
                             <p>STORE in an airtight container to protect the flavor and aroma and ensure rich, fresh tasting coffee. Do not freeze or refrigerate.</p>
                         </div>
-                        <div class="tab-pane" id="sourcing">
-                          <p>We source our coffee from the best family coffee farms around the world and buy only the top 1% of Arabica Beans.</p>
-                            <p>We hand roast our coffee daily in small batches to a traditional, smooth taste profile. This is the way we've done it since 1963, when we opened our first store in Brentwood, CA.</p>
+                        <div class="tab-pane coffee-tabs" id="sourcing">
+                            <p>We source our coffee from the best family coffee farms around the world and buy only the top 1% of Arabica Beans.</p>
+                            <p>We hand roast our coffee daily in small batches to a traditional, smooth taste profile. This is the way we've done it since 1963, when we opened our first store in Brentwood, CA.</p>   
                         </div>
                       </div>
                     </div>
@@ -87,22 +87,7 @@
       </div><!-- END jumbotron checkout window -->
     </div><!-- END container -->
 
-    <footer>
-      <div class="row">
-        <div class="col-sm-6">
-          <h1 class="footer-logo">The Coffee House</h1>
-        </div>
-        <div class="footer-address col-sm-6">
-          <address> 
-             Address line 1 <br>
-             Cityname, ST 33333<br>
-             Phone: 808.888.8888<br>
-            <a href="#">Email Us</a> 
-          </address>
-        </div>
-      </div>
-    </footer>
-
+    <!--#include virtual="includes/footer.html" -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//code.jquery.com/jquery.js"></script>

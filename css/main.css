@@ -6029,6 +6029,29 @@ h1 a:hover {
 .storeImgLinks-col-2 .store-item-thumb span {
   color: #b4917e;
 }
+.categories-mobile-header {
+  background: #764630;
+}
+.mobile-dropdown-list {
+  background: #eadbd5;
+  border: none;
+  opacity: .9;
+}
+.mobile-dropdown-list button {
+  border: none;
+}
+.mobile-dropdown-list .categories-brand {
+  color: #eadbd5;
+}
+#mobile-dropdown ul li a {
+  color: #764630;
+}
+#mobile-dropdown ul li a:hover {
+  color: #eadbd5;
+  background-color: #764630;
+  text-indent: 10px;
+  -webkit-transition: .5s ease;
+}
 .bean-categories {
   margin-top: 20px;
 }
@@ -6043,57 +6066,7 @@ h1 a:hover {
   text-decoration: none;
 }
 .bean-categories a:hover {
-  color: #fff;
-}
-.image-col-left .coffeehouse-breadcrumbs {
-  background-color: #eadbd5;
-}
-.image-col-left .coffeehouse-breadcrumbs a {
-  color: #764630;
-  text-decoration: none;
-}
-.checkout-window {
-  background-color: #eadbd5;
-  margin-bottom: 60px;
-}
-.checkout-col-right {
-  margin-top: 80px;
-}
-.checkout-col-right .checkout-heading {
-  color: #764630;
-  border-bottom: 2px solid #764630;
-}
-.checkout-col-right .checkout-heading h3 {
-  font-family: 'Holtwood One SC', serif;
-  font-size: 1.5em;
-  text-align: left;
-}
-.info-checkout-section h4 {
-  font-size: 1em;
-  color: #764630;
-  margin-right: 60px;
-}
-.info-checkout-section span {
-  color: #764630;
-}
-.shopping-button {
-  margin-right: 3px;
-  margin-bottom: 20px;
-}
-.info-checkout-description p {
-  font-size: .8em;
-}
-.info-checkout-tabs p {
-  font-size: .8em;
-}
-.info-checkout-tabs li {
-  color: #764630;
-}
-.info-checkout-tabs li a {
-  color: #764630;
-}
-.info-tabs {
-  margin-bottom: 15px;
+  color: #eadbd5;
 }
 body {
   background: url(../img/bg-dark.jpg);
@@ -6111,9 +6084,6 @@ body {
   color: #eadbd5;
   text-shadow: 1px 1px 1px #000, 3px 3px #715d52;
   font-size: 2.5em;
-  text-align: left;
-  margin-bottom: 40px;
-  margin-left: 15px;
 }
 footer {
   background: #000;
@@ -6121,17 +6091,37 @@ footer {
   border-top: solid 1px #3e3030;
 }
 .footer-address {
-  margin-left: 15px;
+  margin-top: 20px;
   color: #eadbd5;
+  font-size: .9em;
 }
 .footer-address a {
   text-decoration: none;
   color: #b4917e;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .footer-logo {
     font-size: 3.5em;
+    margin-top: 30px;
   }
+  .footer-address {
+    font-size: 1em;
+  }
+}
+.social-icons img {
+  color: #715d52;
+  height: 30px;
+  padding: 0 10px;
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .social-icons img {
+    margin-top: 35px;
+    height: 40px;
+  }
+}
+.social-icons img a:hover {
+  color: #715d52;
 }
 #subhead {
   background-image: url("../img/exterior.jpg");
@@ -6193,4 +6183,62 @@ footer {
 }
 .carousel-indicators {
   bottom: -40px;
+}
+.image-col-left .coffeehouse-breadcrumbs {
+  background-color: #eadbd5;
+}
+.image-col-left .coffeehouse-breadcrumbs a {
+  color: #764630;
+  text-decoration: none;
+}
+.checkout-window {
+  background-color: #eadbd5;
+  margin-bottom: 60px;
+  padding: 15px 15px;
+  border-radius: 5px;
+}
+.checkout-col-right {
+  margin-top: 35px;
+}
+.checkout-col-right .checkout-heading {
+  color: #764630;
+  border-bottom: 2px solid #764630;
+  font-family: 'Holtwood One SC', serif;
+  font-size: 1.5em;
+  text-align: left;
+}
+.info-checkout-section h4 {
+  font-size: 1em;
+  color: #764630;
+  margin-right: 60px;
+  margin-top: 0;
+}
+.info-checkout-section span {
+  color: #764630;
+}
+.shopping-button {
+  margin-right: 3px;
+  margin-bottom: 20px;
+}
+.info-checkout-description p {
+  font-size: 1em;
+}
+.info-checkout-tabs p {
+  font-size: 1em;
+}
+.info-checkout-tabs li {
+  color: #764630;
+}
+.info-checkout-tabs li a {
+  color: #764630;
+}
+.info-tabs {
+  margin-bottom: 15px;
+  border-radius: 7px;
+}
+.coffee-tabs {
+  backgound-color: #715d52;
+}
+.info-checkout-col-right {
+  text-align: right;
 }

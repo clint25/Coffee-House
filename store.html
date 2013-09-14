@@ -3,7 +3,7 @@
   <head>
     <title>Coffee House</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
+    
     <link href="css/main.css" rel="stylesheet" media="screen">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -12,13 +12,13 @@
       <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
   </head>
+  
   <body>
-    <header>
-      <h1><a href="index.html">The Coffee House</a></h1>
-    </header>
+
+    <!--#include virtual="includes/header.html" -->
 
     <div class="row">
-      <div class="col-sm-12 store-subhead"></div>
+      <div class="col-sm-12 store-subhead img-responsive"></div>
     </div>
 
     <div class="container">
@@ -27,9 +27,49 @@
       </div>
     </div>
 
+    <header id="mobile-dropdown" class="visible-xs navbar navbar-inverse mobile-dropdown-list">
+      <div class="container">
+        <div class="navbar-header categories-mobile-header">
+          <button class="navbar-toggle mobile-dropdown-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand categories-brand">Categories</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav mobile-category-nav">
+            <li>
+              <a href="#">Light and Subtle</a>
+            </li>
+            <li>
+              <a href="#">Light and Distinctive</a>
+            </li>
+            <li>
+              <a href="#">Medium and Smooth</a>
+            </li>
+            <li>
+              <a href="#">Dark and Distinctive</a>
+            </li>
+            <li>
+              <a href="#">Decaffeinated</a>
+            </li>
+            <li>
+              <a href="#">Flavored</a>
+            </li>
+            <li>
+              <a href="#">Reserve</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
     <div id="store-page-menu" class="container">
       <div class="row">
-        <div class="store-menu-col-1 col-sm-6 col-md-3">
+        <div class="store-menu-col-1 col-sm-3 hidden-xs">
           <div class="bean-categories">
             <p><a href="#">Light and Subtle</a></p>
             <p><a href="#">Light and Distinctive</a></p>
@@ -41,12 +81,12 @@
           </div>
         </div><!-- END store-menu-links -->
 
-        <div class="storeImgLinks-col-2 col-sm-6 col-md-9">
+        <div class="storeImgLinks-col-2 col-sm-9">
           <div class="bean-img-links">
             <div class="row row-one">
-              <div class="col-sm-6 col-md-4">
+              <div class="col-sm-4 col-xs-6">
                 <div class="thumbnail store-item-thumb">
-                  <a href="itemspage.html"><img src="img/store-item.jpg" alt="Bag of Beans"></a>
+                  <a href="itemspage.html"><img class="img-responsive" src="img/store-item.jpg" alt="Bag of Beans"></a>
                   <div class="caption">
                     <h3>Name of this Blend</h3>
                     <span class="glyphicon glyphicon-star"></span>
@@ -56,9 +96,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-4">
+              <div class="col-sm-4 col-xs-6">
                 <div class="thumbnail store-item-thumb">
-                  <a href="itemspage.html"><img src="img/store-item.jpg" alt="Bag of Beans"></a>
+                  <a href="itemspage.html"><img class="img-responsive" src="img/store-item.jpg" alt="Bag of Beans"></a>
                   <div class="caption">
                     <h3>Name of this Blend</h3>
                     <span class="glyphicon glyphicon-star"></span>
@@ -68,9 +108,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-4">
+              <div class="col-sm-4 col-xs-6">
                 <div class="thumbnail store-item-thumb">
-                  <a href="itemspage.html"><img src="img/store-item.jpg" alt="Bag of Beans"></a>
+                  <a href="itemspage.html"><img class="img-responsive" src="img/store-item.jpg" alt="Bag of Beans"></a>
                   <div class="caption">
                     <h3>Name of this Blend</h3>
                     <span class="glyphicon glyphicon-star"></span>
@@ -80,9 +120,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-4">
+              <div class="col-sm-4 col-xs-6">
                 <div class="thumbnail store-item-thumb">
-                  <a href="itemspage.html"><img src="img/store-item.jpg" alt="Bag of Beans"></a>
+                  <a href="itemspage.html"><img class="img-responsive" src="img/store-item.jpg" alt="Bag of Beans"></a>
                   <div class="caption">
                     <h3>Name of this Blend</h3>
                     <span class="glyphicon glyphicon-star"></span>
@@ -92,9 +132,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-4">
+              <div class="col-sm-4 col-xs-6">
                 <div class="thumbnail store-item-thumb">
-                  <a href="itemspage.html"><img src="img/store-item.jpg" alt="Bag of Beans"></a>
+                  <a href="itemspage.html"><img class="img-responsive" src="img/store-item.jpg" alt="Bag of Beans"></a>
                   <div class="caption">
                     <h3>Name of this Blend</h3>
                     <span class="glyphicon glyphicon-star"></span>
@@ -104,9 +144,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-4">
+              <div class="col-sm-4 col-xs-6">
                 <div class="thumbnail store-item-thumb">
-                  <a href="itemspage.html"><img src="img/store-item.jpg" alt="Bag of Beans"></a>
+                  <a href="itemspage.html"><img class="img-responsive" src="img/store-item.jpg" alt="Bag of Beans"></a>
                   <div class="caption">
                     <h3>Name of this Blend</h3>
                     <span class="glyphicon glyphicon-star"></span>
@@ -116,9 +156,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-4">
+              <div class="col-sm-4 col-xs-6">
                 <div class="thumbnail store-item-thumb">
-                  <a href="itemspage.html"><img src="img/store-item.jpg" alt="Bag of Beans"></a>
+                  <a href="itemspage.html"><img class="img-responsive" src="img/store-item.jpg" alt="Bag of Beans"></a>
                   <div class="caption">
                     <h3>Name of this Blend</h3>
                     <span class="glyphicon glyphicon-star"></span>
@@ -128,9 +168,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-4">
+              <div class="col-sm-4 col-xs-6">
                 <div class="thumbnail store-item-thumb">
-                  <a href="itemspage.html"><img src="img/store-item.jpg" alt="Bag of Beans"></a>
+                  <a href="itemspage.html"><img class="img-responsive" src="img/store-item.jpg" alt="Bag of Beans"></a>
                   <div class="caption">
                     <h3>Name of this Blend</h3>
                     <span class="glyphicon glyphicon-star"></span>
@@ -140,9 +180,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-4">
+              <div class="col-sm-4 col-xs-6">
                 <div class="thumbnail store-item-thumb">
-                  <a href="itemspage.html"><img src="img/store-item.jpg" alt="Bag of Beans"></a>
+                  <a href="itemspage.html"><img class="img-responsive" src="img/store-item.jpg" alt="Bag of Beans"></a>
                   <div class="caption">
                     <h3>Name of this Blend</h3>
                     <span class="glyphicon glyphicon-star"></span>
@@ -158,22 +198,7 @@
       </div><!-- END end row -->
     </div><!-- END menu container -->
 
-    <footer>
-      <div class="row">
-        <div class="col-sm-6">
-          <h1 class="footer-logo">The Coffee House</h1>
-        </div>
-        <div class="footer-address col-sm-6">
-          <address> 
-             Address line 1 <br>
-             Cityname, ST 33333<br>
-             Phone: 808.888.8888<br>
-            <a href="#">Email Us</a> 
-          </address>
-        </div>
-      </div>
-    </footer>
-
+    <!--#include virtual="includes/footer.html" -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//code.jquery.com/jquery.js"></script>
